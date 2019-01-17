@@ -62,7 +62,7 @@ const customClientApi = new ApolloClient({
       cache
     }),
     new HttpLink({
-      uri: 'https://smart-gov-api.herokuapp.com/graphql-api'
+      uri: 'http://localhost:3000/graphql-api'
       // credentials: 'include'
     })
   ]),

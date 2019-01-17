@@ -29,6 +29,7 @@ import {
   COLOR_BLUE,
   COLOR_RED
 } from "../constants";
+import SimpleLineChart from '../components/SimpleLineChart';
 
 class EnergyConsumption extends Component {
   state = {
@@ -47,22 +48,7 @@ class EnergyConsumption extends Component {
     return (
       <div style={{ height: 300 }}>
         <ResponsiveContainer>
-          <BarChart
-            data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar
-              dataKey="KiloWattsReais"
-              name="KiloWatts/Reais"
-              fill={COLOR_BLUE}
-            />
-            <Bar dataKey="WattsReais" name="Watts/Reais" fill={COLOR_RED} />
-          </BarChart>
+          <SimpleLineChart />
         </ResponsiveContainer>
       </div>
     );
