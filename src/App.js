@@ -13,7 +13,7 @@ import { ModalProvider } from "./components/Modal/ModalContext";
 import { FilterProvider } from "./components/FilterContext";
 
 const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql-auth"
+  uri: "https://smart-gov-api.herokuapp.com/graphql-auth"
 });
 
 class App extends Component {
